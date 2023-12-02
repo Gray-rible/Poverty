@@ -1,0 +1,965 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Eme emeng website</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <style>
+          body {
+    font-family: Arial, sans-serif;
+    background-color: #b4c195;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    margin: 0 auto; /* Center the content */
+}
+         .logo{
+           margin-top: -30px;
+           margin-left: -30px;
+           font-size:10px;
+           background-image: url('logo.png');
+           height: 30px;
+           width:30px;
+           background-size: cover;
+         }
+          header {
+              
+              height: 300px; 
+              width:970px;
+              background-color: #333;
+              color: White;
+              text-align: center;
+              padding: 40px;
+              background-image: url('back.png');
+              background-size: cover;
+          }
+          .taas{
+            z-index: 100;
+          }
+          nav {
+              background-color: white;
+              width:max;
+              ;
+              position:  sticky;
+              top: 0px;
+              text-align: center;
+              padding-top: 10px;
+              padding-bottom: 11px;
+              padding-right: 50px;
+              padding-left: 50px;
+          }
+          header h4{
+            margin-top: -17px;
+          }
+          h2{
+             font-family: Franklin Gothic Medium;
+          }
+          }
+          h1 {
+              margin: 0;
+          }
+          .body{
+          margin: 0;
+          overflow: hidden;
+          
+          }
+         .globe-container {
+              perspective: 1200px;
+              width: 100vw;
+              height:50vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+  
+          .globe {
+              width: 200px;
+              height: 200px;
+              background-image: url('globexnx.png'); /* Replace 'globe.png' with your globe image */
+              background-size: cover;
+              border-radius: 50%;
+              animation: spin 5.0s linear infinite;
+          }
+  
+          @keyframes spin {
+              0% {
+                  transform: rotateY(0deg);
+              }
+              100% {
+                  transform: rotateY(360deg);
+              }
+          }
+          
+          
+  
+          nav a {
+              width:50px;
+              color: black;
+              text-decoration: none;
+              font-weight: 10px;
+              padding: 13px;
+              cursor: pointer;
+          }
+           nav  a.home{
+           text-align:center;
+           padding:12px 80px 12px 80px;
+           color: whitesmoke;
+           text-decoration: none;
+           font-weight: 10px;
+           margin-left: -200px ;
+           margin-top: -11px;
+           background-color: #566b30;
+           border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            cursor: pointer;
+            position:absolute;
+            z-index: 200;
+          }
+          nav  a.home:hover{
+           text-align:center;
+           padding:12px 80px 12px 80px;
+           color: whitesmoke;
+           text-decoration: none;
+           font-weight: 10px;
+           margin-left: -200px ;
+           margin-top: -11px;
+           background-color: #b4c195;
+           border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            cursor: pointer;
+            position:absolute;
+            z-index: 200;
+            
+          }
+          nav  a.about{
+           text-align:center;
+           padding:11px 30px 11px 120px;
+           color: whitesmoke;
+           width: 100px;
+           text-decoration: none;
+           font-weight: 10px;
+           margin-top: -11px;
+           margin-left: -110px ;
+           background-color: #6b8047;
+           color: white;
+           border-top-right-radius: 50px;
+           position:absolute;
+           z-index: 180;
+           
+          }
+          nav  a.faq{
+           text-align:center;
+           padding:11px 40px 11px 130px;
+           color: whitesmoke;
+           width: 100px;
+           text-decoration: none;
+           font-weight: 10px;
+           margin-top: -11px;
+           margin-left: 110px ;
+           background-color:  #849b64;
+           color: white;
+           border-top-right-radius: 50px;
+           position:absolute;
+           z-index: 170;
+           
+          }
+          nav  a.contact{
+           text-align:center;
+           padding:11px 40px 11px 90px;
+           color: whitesmoke;
+           width: 100px;
+           text-decoration: none;
+           font-weight: 10px;
+           margin-top: -11px;
+           margin-left: 210px ;
+           background-color: #a9b58a;
+           color: white;
+           border-top-right-radius: 50px;
+           z-index: 160;
+           
+          }
+          .about{
+            margin-left: 20px ;
+          }
+          nav a.faq {
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+          nav  a.home:hover{
+           
+           
+          }
+          .asking{
+            margin-top: 20px;
+            margin-left: 30px;
+            height: 300px;
+            width: 400px;
+            background-image: url('ask.png');
+            background-size: cover;
+            background-position-y: -0px;
+            background-position-x: 0px;
+          }
+          .second{
+            margin-top: -80px;
+            margin-left: 30px;
+            margin-right: 30px;
+            background-repeat: none;
+            height: max;
+            width: max;
+            border-style: solid;
+            border-width: 8px;
+            border-color: #566b30;
+            padding:10px;
+            background-color: #b4c195;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            
+            
+          }
+         .yesi {
+           margin-top:-20px;
+           margin-bottom: 0px;
+           text-align: center;
+           color: white;
+           position: sticky;
+           top:35px;
+           background-color: #566b30;
+           width: max;
+          margin-right: -18px;
+           margin-left: -17px;
+           padding-top: 25px;
+           padding-bottom:25px;
+           
+         }
+         .eight{
+           
+           margin-left: 550px;
+         }
+          .list{
+            
+            margin-top:-10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            color: white;
+            
+          }
+         .list  p{
+            font-size: 15px;
+           margin-left: 30px;
+           text-align: left;
+            
+          }
+          .popu{
+            margin-top: 80px;
+            
+          }
+             .popdef{
+            color:white;
+            width: 250px;
+            text-align: center;
+            
+          }
+        .population{
+          
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image: url('pop.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+           .env{
+             margin-top: -10px;
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image:url('environment.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+         .income{
+           margin-top: -10px;
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image:url('inc.png');
+            background-size: cover;
+            border-radius: 8px;
+         }
+          .con{
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image:url('conflict.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+          .educ{
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image:url('educ.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+           .bar{
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image:url('bar.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+            .col{
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image:url('col.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+         .glo{
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right:-10px;
+            width: max;
+            height: 300px;
+            background-image:url('glo.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+          .aid {
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            width: max;
+            height: 300px;
+            background-image: url('aid.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+          .eco {
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            width: max;
+            height: 300px;
+            background-image: url('eco.png');
+            background-size: cover;
+            border-radius: 8px;
+          }
+          footer {
+             
+              height: 700px;
+              background-color: #333;
+              padding-top: 200px;
+              color: #fff;
+              text-align: center;
+              padding: 10px;
+          }
+          div.but{
+            margin-left: 505x;
+          }
+          
+          .button {
+            background-color: #04AA6D;
+            border: 5px solid black;
+            border-radius: 12px;
+            color: ;
+            padding :50px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+             
+          
+          }
+          
+          .join{
+            display: block;
+            color: black;
+            padding:  5px 20px 5px 20px;
+            border: 3px solid darkred;
+            border-radius: 8px;
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+          }
+          .join:hover {
+            border: darkred solid;
+            background-color: indianred;
+            color: white;
+          }
+          
+            .profiles {
+            
+            
+            width: 100vw;
+            height:50vh;
+            
+        }
+
+        .trecy {
+            width: 200px;
+            height: 200px;
+            margin-left:30px;
+            margin-top: 30px;
+            background-image: url('trecy.png'); /* Replace 'globe.png' with your globe image */
+            background-size: cover;
+            border-radius: 50%;
+            animation: spin 5.0s linear infinite;
+        }
+
+          .vir {
+            width: 200px;
+            height: 200px;
+            
+            margin-left:250px;
+            margin-top: -200px;
+            background-image: url('vir.png'); /* Replace 'globe.png' with your globe image */
+            background-size: cover;
+            border-radius: 50%;
+            animation: spin 5.0s linear infinite;
+        }
+            .ben {
+            width: 200px;
+            height: 200px;
+            
+            margin-left:460px;
+            margin-top: -200px;
+            background-image: url('ben.png'); /* Replace 'globe.png' with your globe image */
+            background-size: cover;
+            border-radius: 50%;
+            animation: spin 5.0s linear infinite;
+        }
+          .down{
+            margin-top: 500px;
+          }
+   
+         
+          
+          .pov{
+          font-size: 100px;
+             font-family: Arial,  
+
+            Helvetica, sans-serif; 
+          background: linear-gradient( 
+          
+             #46542d, #46542d,
+           
+              #9bac7d , #46542d, #869368); 
+
+        -webkit-text-fill-color: transparent; 
+
+        -webkit-background-clip: text;
+          }
+          .tejsjsst{
+            position: sticky;
+            right: 100px;
+          }
+          
+          
+   <!-----C---A----R---O---U---S----E----L--------->
+     
+    /* .pagod{
+        margin:0;
+        height: 500px;
+        width:auto;
+        background-image: url('pindot.png');
+        background-size: cover;
+      }
+    .carousel-container {
+      background-color: pink;
+      width: 1050px;
+      height: 400px;
+      margin-top: -40px;
+      overflow: hidden;
+      position:relative;
+      z-index: 50;
+      border-radius: 20px;
+      
+    }
+
+    .carousel {
+      margin-top: -100px;
+      display: flex;
+      transition: transform 0.5s ease;
+      
+    
+    }
+
+    .carousel img {
+      margin-top: 0px;
+      
+    }
+
+    .arrow {
+      
+      transform: translateY(-50%);
+      font-size: 50px;
+      cursor: pointer;
+      color: #333;
+      
+    }
+
+    .prev {
+      padding:10px;
+      width:10px;
+      height:max;
+      content: center;
+      padding-right:30px;
+      margin-top: -180px;
+      margin-left: 10px;
+      background-color: black;
+      opacity: 60%;
+      color: white;
+      border-radius: 50px;
+      position:absolute;
+      z-index: 50;
+    }
+
+    .next {
+      color:blav;
+      padding:10px;
+      width:10px;
+      height:max;
+      content: center;
+      padding-right:30px;
+      margin-top: -180px;
+      margin-left: 990px;
+      background-color: white;
+      opacity: 60%;
+      color: white;
+      border-radius: 50px;
+      position:absolute;
+      z-index: 50;
+      
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #bbb;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #333;
+    }
+   
+    
+     .carousel-container {
+      
+      width: 700px;
+      height: 450px;
+      margin: auto;
+      overflow: hidden;
+      position: absolute;
+      z-index: 50;
+      border-radius: 20px;
+      
+    }
+
+    .carousel {
+      margin-top: -30px;
+      width:700px;
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel img {
+      margin-top: 0px;
+    }
+
+    .arrow {
+      position: absolute;
+      transform: translateY(-50%);
+      font-size: 50px;
+      cursor: pointer;
+      color: #333;
+    }
+    .prev {
+      left: 10px;
+      background-color: mediumseagreen;
+      color: white;
+      border-radius: 20px;
+      padding:30px;
+    }
+    .next {
+      right: 10px;
+      color:pink;
+      background-color: mediumseagreen;
+      color: white;
+      border-radius: 20px;
+      padding:30px;
+      position: absolute;
+    }
+    .dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #bbb;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .dot.active {
+      background-color: #333;
+    }
+    */
+     .pagod{
+        margin:0;
+        height: 500px;
+        
+        background-image: url('pagod.png');
+        background-size: cover;
+      }
+       .carousel-container {
+      width: 1050px;
+      height:auto;
+      margin-top:-108px;
+      overflow: hidden;
+      position:relative;
+      border-radius: 20px;
+      
+    }
+
+    .carousel {
+      height: 497px;
+      
+      margin-top: -30px;
+      display: flex;
+      transition: transform 0.5s ease;
+      position:absolute
+      z-index: 2;
+    }
+ 
+    .carousel img {
+      
+      margin-top: 100px;
+      
+    }
+
+    .arrow {
+      position: absolute;
+      transform: translateY(-50%);
+      font-size: 50px;
+      cursor: pointer;
+      color: #333;
+    }
+ .prev {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:5px 0px 5px 21px;
+      height:max;
+      content: center;
+      padding-right:30px;
+      margin-top: -180px;
+      margin-left: 10px;
+      background-color: black;
+      opacity: 60%;
+      color: white;
+      border-radius: 50px;
+      position:absolute;
+      z-index: 50;
+      cursor: pointer;
+    }
+
+    .next {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding:5px 0px 5px 18px;
+      height:max;
+      content: center;
+      padding-right:30px;
+      margin-top: -180px;
+      margin-left: 975px;
+      background-color: black;
+      opacity: 60%;
+      color: white;
+      border-radius: 50px;
+      position:absolute;
+      z-index: 50;
+      cursor: pointer;
+      
+    }
+
+    .dots {
+      position: absolute;
+      top: 4890px;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #bbb;
+      margin: 0 5px;
+      cursor: pointer;
+      background-color: #b4c195;
+    }
+    .dot.active {
+      background-color:  #566b30;
+    }
+   <!-----C---A----R---O---U---S----E----L--------->
+      </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="logo"><h1 style="margin-left:35px;margin-top:10px;">MoonLime</h1></div>
+         <h1 class="pov"><i>POVERTY</i>  </h1>
+          <h4 style="font-size:20px;margin-top: -70px;">as a <strong>Global Citizenship Isue</strong></h4>
+          
+      </header>
+       <div class="body">
+    
+      </div>
+        <div style="position:sticky;top:0px;z-index: 100;">
+               <div class="taas">
+      <nav  >
+          <div>
+          <a class="home" href="index.html"><strong>HOME</strong></a>
+          <a class="about"  href="about.html"><strong>About Us</strong></a
+           <a class="faq"href="services.html"><strong>FAQ</strong></a>
+          <a class="contact" href="contact.html"><strong>Contacts</strong></a>
+      </nav>
+      </div>
+      </div>
+      
+      <div style="background-color:#566b30;padding-bottom:20px;margin-bottom: 100px; padding-top:50px;height:max;">
+          <h1 style="color:white;font-size:50px;margin-left:150px;padding-top:30px;margin-top: -20px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 50);"> WHAT IS</h1><h1 style="color:#b4c195;font-size:70px; margin-left:180px;paddingmargin-bottom:10px;margin-top: -60px;overflow:hidden;"><i>POVERTY?</i> </h1>
+          
+          <div class="asking"></div>
+          
+           <div style="height:300px;width:600px;background-color:black;margin-top: -350px;margin-left:400px;opacity:30%;padding-bottom:100px;padding-bottom:100px;"></div>
+           
+          <div style="margin-top:-450px;margin-left:400px;padding:50px;position:absolute;z-index:70;">
+            
+            
+          <p style=width:500px;color:white;> Poverty can be defined as a state of  , where individuals or communities lack The resources and capabilities needed to meet basic needs.
+          </p>
+          <p style=width:500px;color:white;>
+           The measurement of poverty varies across countries, but commonly includes income, access to education, healthcare, and living conditions.</p
+           <h3 style="color:#b4c195;">The World Bank Describes poverty in this way:</h3>
+           <blockquote>
+           <p style="width:430px;color:white;margin-left:30px"><i>"The 
+Poverty is hunger. Poverty is lack of shelter. Poverty is being sick and not being able to see a doctor. Poverty is not having access to school and not knowing how to read. Poverty is not having a job, is fear for the future, living one day at a time."</i></p></blockquote>
+    <blockquote>
+ <p style=width:430px;color:white;margin-left:30px;><i>
+"Poverty has many faces, changing from place to place and across time, and has been described in many ways.  Most often, poverty is a situation people want to escape. So poverty is a call to action -- for the poor and the wealthy alike -- a call to change the world so that many more may have enough to eat, adequate shelter, access to education and health, protection from violence, and a voice in what happens in their communities.”</i></p>
+    </blockquote>
+           </div>
+      </div>
+           <div class="second">
+          <h1 class="yesi" style="color:white">What are the  <strong style="color:#b4c195;font-size:40px;"><i>FACTORS</i></strong> causing Poverty?</h1>
+          <div class="list">
+            
+            <div class="population" >
+               
+                <div class="popdef">
+                   <h3 class="test" style="padding-top:30px;">● POPULATION GROWTH</h3>
+         <p stye="color:white;">Rapid population growth, especially in developing nations, strains
+         resources and job opportunities, making it challenging to lift everyone out of poverty. 
+         In the worst cases, even sufficient food can be impossible to supply. In countries with very high population growth, huge numbers of dependent children in comparison to economically productive adults create a further burden.
+          </p>
+          </div>
+               
+           </div>
+            
+            
+            <div class="env">
+            
+         <h3 style="padding-top:30px;margin-left: 640px;">● ENVIRONMENTAL FACTORS</h3>
+          <p style=width:250px;color:white;margin-top:0px;margin-left:650px;>Climate change, natural disasters, and resource depletion disproportionately impact vulnerable communities, exacerbating poverty.    </p>
+         </div>
+         
+         <div class="income">
+            <h3 style="padding-top:30px;margin-left: 20px;">● INCOME INEQUALITY</h3>
+       <p style=width:250px;color:white;margin-top:0px;margin-left:30px;> 
+            Disparities in income and wealth within and between countries contribute to poverty, making it difficult for those at the bottom of the economic ladder to improve their lives.    </p>
+         </div>
+       
+         
+       <div class="educ">
+            <h3 style="padding-top:30px;margin-left: 640px;">● LACK OF ACCESS TO EDUCATION AND HEALTHCARE</h3>
+               <p style=width:250px;color:white;margin-top:0px;margin-left:650px;> 
+               Unequal access to education and healthcare limits individuals' ability to escape poverty and participate in the global economy..</p>
+        </div>
+            
+            
+        <div class="con">
+         <h3  style="padding-top:30px;margin-left: 20px;">● CONFLICT AND INSTABILITY</h3> 
+               <p style=width:250px;color:white;margin-top:0px;margin-left:30px;> 
+               Ongoing conflicts and political instability in various parts of the world hinder development efforts, trapping people in poverty </p>
+        </div>
+        
+ 
+        <div class="bar">
+            <h3 style="padding-top:30px;margin-left: 640px;">● STRUCTURAL BARRIERS</h3>
+               <p style=width:250px;color:white;margin-top:0px;margin-left:650px;> 
+               Discrimination, corruption, and lack of economic opportunities create structural barriers that perpetuate poverty in many regions.</p>
+        </div>
+         
+      <div class="col">
+         <h3  style="padding-top:30px;margin-left: 20px;">● COLONIALISM AND EXPLOITATION</h3> 
+               <p style=width:250px;color:white;margin-top:0px;margin-left:30px;> 
+               Historical colonialism and exploitation of resources in many regions left lasting economic disparities, contributing to poverty in formerly colonized countries.</p>
+        </div>
+        
+       <div class="glo">
+            <h3 style="padding-top:30px;margin-left: 640px;">● GLOBALIZATION</h3>
+               <p style=width:250px;color:white;margin-top:0px;margin-left:650px;> 
+               While globalization has brought economic growth, it has also increased inequality, as wealth and opportunities are not distributed equally among nations and individuals.</p>
+        </div>
+        
+          <div class="aid">
+         <h3  style="width:300px;padding-top:30px;margin-left: 20px;">● INTERNATIONAL AID and DEVELOPMENT EFFORTS</h3> 
+               <p style=width:250px;color:white;margin-top:0px;margin-left:30px;> 
+               Global organizations and initiatives, like the United Nations and foreign aid programs, play a role in addressing poverty but face challenges in achieving sustainable progress..</p>
+        </div>
+        
+         <div class="eco">
+            <h3 style="padding-top:30px;margin-left: 640px;">● ECONOMIC INTERDEPENDANCE</h3>
+               <p style=width:250px;color:white;margin-top:0px;margin-left:650px;> 
+               The global economy is highly interconnected, with countries relying on trade and investment. Poverty in one region can affect supply chains, markets, and economic stability worldwide..</p>
+        </div>
+         <p>Addressing global poverty requires collaborative efforts, policy changes, and sustainable development strategies to ensure a more equitable and prosperous world for all.</p>
+          </div>
+        </div>
+         
+        
+    <!-----C---A----R---O---U---S----E----L--------->
+      <div>
+         <div class="absolute" style="background-image: url('cactus.png');background-size: cover; width:max;position:sticky;top:0px;z-index: 60;">
+           <h1 style="font-size: 40px;;padding-top: 40px;margin-left: 200px;color:white;margin-bottom:0px;padding-bottom:0px;margin-top:20px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 50);">
+             What are the </h1>
+           <strong style="color:#b4c195;margin-top:0px;padding-top:0px;font-size:70px;margin-left: 380px;font-weight:800;">
+             <i stye="margin-top:-200px;">EFFECTS</i>
+           </strong>
+          <h1 style="font-size:40px;padding-top: 0px;margin-left: 550px;color:white;margin-bottom:0px;padding-bottom:30px;margin-top: 0px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 50);">
+           of poverty?</h1>
+           
+          </div>
+          
+      <div style="background-color: #566b30 ;width:max;height:500px;margin-top:38px;z-index: 50;">
+          <div class="carousel-container">
+    <div class="carousel">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
+      <img src="image5.jpg" alt="Image 1">
+      <img src="image6.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
+      <!-- Add more images as needed -->
+    </div>
+
+     </div>
+        <div class="dots" id="dots-container"></div>
+    <div class="arrow prev" onclick="prevSlide()">&#8249;</div>
+    <div class="arrow next" onclick="nextSlide()">&#8250;</div>
+
+     </div>
+     </div>
+    
+  <script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const carousel = document.querySelector('.carousel');
+      const slideWidth = document.querySelector('.carousel img').clientWidth;
+      const dotsContainer = document.getElementById('dots-container');
+
+      if (index < 0) {
+        currentIndex = carousel.children.length - 1;
+      } else if (index >= carousel.children.length) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+
+      carousel.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+
+      // Update dots
+      const dots = Array.from(dotsContainer.children);
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    // Initialize dots
+    const carousel = document.querySelector('.carousel');
+    const dotsContainer = document.getElementById('dots-container');
+    for (let i = 0; i < carousel.children.length; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      dot.addEventListener('click', () => showSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+    // Show initial slide
+    showSlide(currentIndex);
+  </script>
+   <!-----C---A----R---O---U---S----E----L--------->
+      <div class="down">
+      <footer style=margin-top:2000px;>
+          &copy; 2023 My Website
+         <div class="globe-container"> 
+             <div class="globe">
+             </div>
+         </div>
+      </div>
+      </footer>
+     <div class="but">
+      <button class="new" >
+        <h4> Button</h4>
+      </button>
+     </div>
+    </div>
+  </body>
+  </html>
+     
